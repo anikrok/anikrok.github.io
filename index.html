@@ -48,6 +48,7 @@
             showClearControl: true,
         }
         map.on('polylinemeasure:add', e => { console.log(e.latlng) });
+        map.attributionControl.addAttribution('Norsk Polarinstitutt / Norwegian Polar Institute');
         L.control.polylineMeasure(options).addTo(map);
 
         const greenIcon = new L.Icon({
